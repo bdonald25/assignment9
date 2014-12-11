@@ -1,0 +1,105 @@
+/*                                                                            
+  Name: Bobby Donald                                         
+  Email: robert_donald1@student.uml.edu                            
+  UMass Lowell Computer Science, 91.461 GUI Programming I                      
+  Date: 12/02/2014                                                               
+  Description: CSS File for Assignment 9.                               
+*/ 
+
+body, table {
+    font-size: 15pt ;
+    color: black;
+}
+
+#maintitle {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+
+#instructions {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* collapse the table borders to get rid of the space between cells*/
+#tblAlbums {
+    border-collapse: collapse ;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: black;
+    width: 98%
+}
+
+/* add borders and padding to the table head and body cells */
+#tblAlbums th, #tblAlbums td {
+    border: 1px solid black ;
+    padding: 2px 5px ;
+}
+
+/* reverse video header row */
+#tblAlbums thead tr th {
+    color: white ;
+    font-size: 20;
+    background-color: black ;
+}
+
+
+
+/* handle rollovers on clickable columns */
+#tblAlbums thead tr th:nth-child(2):hover,
+#tblAlbums thead tr th:nth-child(3):hover,
+#tblAlbums thead tr th:nth-child(4):hover {
+    cursor: pointer ;
+    color: black ;
+    background-color: lightblue ;
+}
+
+/* align all table body cells to the top of their cells*/
+#tblAlbums tbody tr td {
+    vertical-align: top ;
+}
+
+/* center the cells */
+#tblAlbums tbody tr td{
+    text-align: center ;
+}
+
+/* set no break in date string column */
+#tblAlbums tbody tr td:nth-child(4) {
+    white-space: nowrap ;
+}
+
+#tblAlbums tbody tr:hover {
+    background-color: lightblue;
+    color:black;
+}
+
+#tblAlbums tbody tr {
+    background-color: #cccccc;
+}
+
+#tbl, #checkbox {
+    background-color: lightskyblue;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 5px solid #1A13ED;
+    
+}
+.albumCovers {
+    max-width: 100px;
+}
+
+#checkbox {
+    background-color: lightgray;
+}
+
+

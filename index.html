@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+    Name: Bobby Donald                                             
+    Email: robert_donald1@student.uml.edu                            
+    UMass Lowell Computer Science, 91.461 GUI Programming I                      
+    Date: 12/2/2014                                                               
+    Description: Modified version of Prof. Heines's
+    Assignment #9 starter HTML File
+-->
+
+<html ng-app="BeatlesApp">
+    <head>
+        <meta charset="utf-8">
+        <title>List of Beatles Albums</title>
+
+        <!-- this is version 1.3.6 -->
+        <script src="angular.js"></script>
+
+
+        <!-- Professor Heines's collection of utility functions -->
+        <script src="jmh-utilities.js"></script>
+        
+        <!-- 
+            This script was originally written by Prof. Heines but then modified for my program
+        -->
+        <script src="table.js"></script>
+
+
+        <!-- filter functions for this app - created by Prof. Heines -->
+        <script src="jmh-assn09-filters.js"></script>
+
+        <!-- My CSS file for this assignment. -->
+        <link rel="stylesheet" type="text/css" href="assignment9.css">
+    </head>
+
+    <body>
+        <div>
+            <!-- Title of Page.-->
+            <h1 id="maintitle">The Beatles Albums</h2>
+
+            <!-- Instructions. -->
+            <p id="instructions"><em>Click Column Headers to sort them.</em></p>
+            
+<!--            <audio controls>
+            <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>-->
+
+            <div id = "tbl" ng-controller="BeatlesCtrl" >
+                <!-- The table is controlled by the AngularJS controller. -->
+                <table id="tblAlbums">
+                    
+                    <!-- The column heads. -->
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th ng-click="sortColumn(2)">Name</th>
+                            <th ng-click="sortColumn(3)">Release<br>Date</th>
+                            <th ng-show="showImages">Cover</th>
+                        </tr>
+                    </thead>
+
+                    <tbody ng-model="jsonData">
+                        <tr ng-repeat="oneSubmit in jsonData.data.RECORDS| orderBy : sortField : sortDescending">
+                            <td>{{$index| increment}}</td>
+                            <td>{{oneSubmit.name}}</td>
+                            <td>{{oneSubmit.date| date:"MMMM d, yyyy"}}</td>
+                            <td ng-show="showImages"><img alt='Cover for: {{oneSubmit.name}}' class='albumCovers' ng-src='{{oneSubmit.coverURL}}'></td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

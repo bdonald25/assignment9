@@ -1,0 +1,69 @@
+{
+    "RECORDS": [
+        {
+            "name": "Please Please Me",
+            "date": "1962-02-22",
+            "coverURL": "http://upload.wikimedia.org/wikipedia/en/a/a4/PleasePleaseMe.jpg"
+        },
+        {
+            "name": "With the Beatles",
+            "date": "1963-11-22",
+            "coverURL": "http://upload.wikimedia.org/wikipedia/en/0/0a/Withthebeatlescover.jpg"
+        },
+        {
+            "name": "A Hard Day's Night",
+            "date": "1964-10-07",
+            "coverURL": "http://upload.wikimedia.org/wikipedia/en/e/e6/HardDayUK.jpg"
+        },
+        {
+            "name": "Beatles for Sale",
+            "date": "1964-04-10",
+            "coverURL": "http://upload.wikimedia.org/wikipedia/en/4/40/Beatlesforsale.jpg"
+        },
+        {
+            "name": "Help!",
+            "date": "1965-08-06",
+            "coverURL": "http://upload.wikimedia.org/wikipedia/en/3/3d/Help.jpg"
+        },
+        {
+            "name": "Rubber Soul",
+            "date": "1965-12-03",
+            "coverURL": "http://upload.wikimedia.org/wikipedia/en/7/74/Rubber_Soul.jpg"
+        },
+        {
+            "name": "Revolver",
+            "date": "1966-08-05",
+            "coverURL": "http://upload.wikimedia.org/wikipedia/en/1/16/Revolver.jpg"
+        },
+        {
+            "name": "Sgt. Pepper's Lonely Hearts Club Band",
+            "date": "1967-06-01",
+            "coverURL": "http://upload.wikimedia.org/wikipedia/en/1/16/Revolver.jpg"
+        },
+        {
+            "name": "Magical Mystery Tour",
+            "date": "1967-11-27",
+            "coverURL": "http://upload.wikimedia.org/wikipedia/en/8/85/TheBeatlesMagicalMysteryTouralbumcover.jpg"
+        },
+        {
+            "name": "The Beatles (White Album)",
+            "date": "1968-11-22",
+            "coverURL": "http://consequenceofsound.files.wordpress.com/2013/11/beatles-white-album.jpg"
+        },
+        {
+            "name": "Yellow Submarine",
+            "date": "1969-01-13",
+            "coverURL": "http://upload.wikimedia.org/wikipedia/en/a/ac/TheBeatles-YellowSubmarinealbumcover.jpg"
+        },
+        {
+            "name": "Abbey Road",
+            "date": "1969-09-26",
+            "coverURL": "http://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg"
+        },
+        {
+            "name": "Let It Be",
+            "date": "1970-05-08",
+            "coverURL": "http://upload.wikimedia.org/wikipedia/en/2/25/LetItBe.jpg"
+        }
+    ]
+}
